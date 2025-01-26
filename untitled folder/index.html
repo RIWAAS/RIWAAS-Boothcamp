@@ -2,438 +2,365 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <title>Frontend Boothcamp</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXT Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="Styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-        <div class="container">
-            <a href="#" class="navbar-brand">Frontend Boothcamp</a>
+  <!--Navbar section-->
+  <nav class="navbar">
+    <div class="navbar__container bg-dark">
+      <a href="" id="navbar__logo"><img src="./img/RIWAAS.png" class="img-fluid" alt="icon"> RIWAA'S
+      </a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="./" class="navbar__links">Home</a>
+        <li class="navbar__item">
+          <a href="#" class="navbar__links">
+            Rooms</a>
+        </li>
+        <li class="navbar__btn">
+          <a href="./" class="button">Map</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-            <span class="navbar-toggler-icon"></span>
-           </button>
+  <!-- carousel -->
+  <div class="carousel">
+    <!-- list item -->
+    <div class="list">
+      <div class="item">
+        <div class="carousel__container">
+          <img src="./img/348172270.jpg">
+          <div class="content">
+            <div class="author">ARSALAN</div>
+            <div class="title">RIWA'S GUEST HOUSE</div>
+            <div class="topic">ROOMS </div>
+            <div class="des">
+              <!-- lorem 50 -->
 
-            <div class="collapse navbar-collapse" id="navbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="#learn" class="nav-link"> What You'll learn </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Question" class="nav-link"> Question </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#Instructors" class="nav-link">Instructors </a>
-                    </li>
-                </ul>
+
             </div>
-        </div>
-    </nav>
-    <!-- Showcase-->
-    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
-        <div class="container">
-            <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <h1>Become a <span class="text-warning">Web Develope
-                        </span></h1>
-                    <p class="lead my-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur illo voluptates, amet eius
-                        enim sit corporis! Laboriosam, unde!
-                    </p>
-                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start The
-                        Enrollment</button>
-                </div>
-                <img class="img-fluid w-50 d-none d-sm-block" src="./img/undraw_floating_hvri.png" alt="img">
+            <div class="buttons">
+              <button>KINGS</button>
+              <button>ROOM</button>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- Newsletter -->
-    <section class="bg-primary text-light p-5">
-        <div class="container">
-            <d class="md-flex justify-content-between align-items-center">
-                <h3 class="mb-3 mb-md-0">
-                    Sign Up for Our
-                    Newsletter</h3>
-                <div class="input-group news-input">
-                    <input type="text" class="form-control" placeholder="Enter Email" aria-label="Recipient's username"
-                        aria-describedby="button-addon2">
+        <div class="item">
+          <img src="./img/double-room.jpg">
+          <div class="content">
+            <div class="author">ARSALAN</div>
+            <div class="title">RIWA'S GUEST HOUSE</div>
+            <div class="topic">ROOM</div>
+            <div class="des">
 
-                    <button class="btn btn-dark btn-lg" type="button" id="button-addon2">Button</button>
-                </div>
 
-        </div>
-        </div>
-    </section>
-    <!-- Boxes-->
-    <section class="p-5">
-        <div class="container">
-            <div class="row text-center g-4">
-                <div class="col-md">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-laptop"></i>
-                            </div>
-                            <h3 class="card-title mb-3">
-                                Virtual
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa consectetur
-                                modi et vero suscipit.
-                            </p>
-                            <a href="" class="btn btn-primary">Read more </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-secondary text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-person-square"></i>
-                            </div>
-                            <h3 class="card-title mb-3">
-                                Hybrid
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa consectetur
-                                modi et vero suscipit.
-                            </p>
-                            <a href="" class="btn btn-dark">Read more </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md ">
-                    <div class="card bg-dark text-light">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-3">
-                                <i class="bi bi-people "></i>
-                            </div>
-                            <h3 class="card-title mb-3">
-                                In Person
-                            </h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa consectetur
-                                modi et vero suscipit.
-                            </p>
-                            <a href="" class="btn btn-primary">Read more </a>
-
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-    <!-- Learn Section-->
-    <section id="learn" class="p-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md">
-                    <img src="./img/undraw_gatsby-js_wd5s.png" class="img-fluid" alt="">
-                </div>
-                <div class="col-md p-5">
-                    <h2>Learn The Fundamentals</h2>
-                    <P class="lead">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui doloremque dolor perspiciatis
-                        mollitia neque animi?
-                    </P>
-                    <p class="lead">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo culpa earum qui! Tempora dolor,
-                        quos dolorum architecto voluptatem amet dolorem ea libero ipsum cumque repellendus quod nihil
-                        officia eius quibusdam?
-                    </p>
-                    <a href="" class="btn btn-light mt-3">
-                        <i class="bi bi-chevron-right"></i>Read more
-                    </a>
-
-                </div>
+            <div class="buttons">
+              <button>PLAY</button>
+              <button>ROOM</button>
             </div>
+          </div>
         </div>
-    </section>
+        <div class="item">
+          <img src="./img/WhatsApp Image 2024-12-16 at 11.58.12 AM.jpeg">
+          <div class="content">
+            <div class="author">ARSALAN</div>
+            <div class="title">RIWA'S GUEST HOUSE</div>
+            <div class="topic">ROOMS</div>
+            <div class="des">
 
-    <section id="learn" class="p-5 bg-dark text-light">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5">
-                    <h2>Learn React</h2>
-                    <P class="lead">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui doloremque dolor perspiciatis
-                        mollitia neque animi?
-                    </P>
-                    <p class="lead">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo culpa earum qui! Tempora dolor,
-                        quos dolorum architecto voluptatem amet dolorem ea libero ipsum cumque repellendus quod nihil
-                        officia eius quibusdam?
-                    </p>
-                    <a href="" class="btn btn-light mt-3">
-                        <i class="bi bi-chevron-right"></i>Read more
-                    </a>
 
-                </div>
-                <div class="col-md">
-                    <img src="./img/undraw_react_ytu4.png" class="img-fluid" alt="">
-                </div>
             </div>
-        </div>
-    </section>
-    <!-- Question Accordion-->
-    <section id="questions" class="p-5">
-        <div class="container">
-            <h2 class="text-center mb-4"> Frequently Asked Question</h2>
-            <div class="accordion accordion-flush" id="questions">
-                <!-- Item 1-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Where are you exactly located
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, quod? Praesentium,
-                            possimus. Amet labore aliquam voluptates debitis. Ipsam vel magni perferendis veritatis
-                            quaerat totam error corrupti optio officiis ullam possimus unde repellat minus
-                            exercitationem dolor incidunt nesciunt quis voluptatum, et nisi odit omnis voluptate
-                            recusandae provident. Fugiat consectetur illum a?
-                        </div>
-                    </div>
-                </div>
-                <!-- Item2-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            How much it cost to attend
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, quod? Praesentium,
-                            possimus. Amet labore aliquam voluptates debitis. Ipsam vel magni perferendis veritatis
-                            quaerat totam error corrupti optio officiis ullam possimus unde repellat minus
-                            exercitationem dolor incidunt nesciunt quis voluptatum, et nisi odit omnis voluptate
-                            recusandae provident. Fugiat consectetur illum a?
-                        </div>
-                    </div>
-                </div>
-                <!-- Item3-->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            What do i need to know
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#questions">
-                        <div class="accordion-body">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, quod? Praesentium,
-                            possimus. Amet labore aliquam voluptates debitis. Ipsam vel magni perferendis veritatis
-                            quaerat totam error corrupti optio officiis ullam possimus unde repellat minus
-                            exercitationem dolor incidunt nesciunt quis voluptatum, et nisi odit omnis voluptate
-                            recusandae provident. Fugiat consectetur illum a?
-                        </div>
-                    </div>
-                </div>
+            <div class="buttons">
+              <button>COMFORT</button>
+              <button>ROOM</button>
             </div>
+          </div>
         </div>
-        </div>
-    </section>
-    <!-- Instructor -->
-    <section id="instructors" class="p-5 bg-primary">
-        <div class="container">
-            <h2 class="text-center text-white">Our Instructors </h2>
-            <p class="lead text-center text-white mb-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti delectus modi quo cupiditate quas
-                harum possimus, nostrum porro?
-            </p>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3"
-                                alt="">
-                            <h3 class="card-title mb-3">Jessica Doe</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio aliquam
-                                corrupti
-                                praesentium incidunt eos.
-                            </p>
-                            <a href=" "><i class="bi bi-instagram text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-facebook text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-twitter text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-linkedin text-dark mx-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
+        <div class="item">
+          <img src="./img/photo-1629140727571-9b5c6f6267b4.jpeg">
+          <div class="content">
+            <div class="author">ARSALAN</div>
+            <div class="title">RIWA'S GUEST HOUSE</div>
+            <div class="topic">ROOMS</div>
+            <div class="des">
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3"
-                                alt="">
-                            <h3 class="card-title mb-3">Ravi Nath</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio aliquam
-                                corrupti
-                                praesentium incidunt eos.
-                            </p>
-                            <a href=" "><i class="bi bi-instagram text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-facebook text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-twitter text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-linkedin text-dark mx-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3"
-                                alt="">
-                            <h3 class="card-title mb-3">Path Roy</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio aliquam
-                                corrupti
-                                praesentium incidunt eos.
-                            </p>
-                            <a href=" "><i class="bi bi-instagram text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-facebook text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-twitter text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-linkedin text-dark mx-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <img src="https://randomuser.me/api/portraits/women/14.jpg" class="rounded-circle mb-3"
-                                alt="">
-                            <h3 class="card-title mb-3">Steff Williams</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias odio aliquam
-                                corrupti
-                                praesentium incidunt eos.
-                            </p>
-                            <a href=" "><i class="bi bi-instagram text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-facebook text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-twitter text-dark mx-1"></i> </a>
-                            <a href=" "><i class="bi bi-linkedin text-dark mx-1"></i> </a>
-                        </div>
-                    </div>
-                </div>
             </div>
-
-        </div>
-    </section>
-    <!-- Contact & Map -->
-    <section class="p-5 bg-light">
-        <div class="container">
-            <div class="row g-5 align-items-center justify-content-between">
-                <div class="col-md">
-                    <h2 class="text-center mb-4"> Contact info</h2>
-                    <ul class="list-group list-group-flush lead">
-                        <li class="list-group-item">
-                            <span class="fw-bold">Main Location:</span> 50 Main street
-                            andhari
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Enrollement Phone:</span> 098-765-234
-
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Student Phone:</span> 123-456-987
-
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Enrollement Email:</span> hatoff@gmail.com
-
-                        </li>
-                        <li class="list-group-item">
-                            <span class="fw-bold">Student Email:</span> f@gmail.com
-
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md   p-5">
-                    <div id="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d792.2247799473155!2d91.90441944051179!3d25.577538472952515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e9!4m5!1s0x37507f256bc30b7d%3A0x2bae6e7936d9b158!2sRIWA&#39;S%20Guest%20house%20Demsei%C3%B1-%C3%8Fong%20Shillong%2C%20Meghalaya%20793011!3m2!1d25.577126399999997!2d91.90431339999999!4m3!3m2!1d25.577218199999997!2d91.9043274!5e1!3m2!1sen!2sin!4v1733806356042!5m2!1sen!2sin"
-                            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="img-fluid"></iframe>
-                    </div>
-
-                </div>
+            <div class="buttons">
+              <button>LEISURE</button>
+              <button>ROOM</button>
             </div>
+          </div>
         </div>
 
-
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer class="p-5 bg-dark text-light text-center position-relative">
-        <div class="container">
-            <p class="lead">Copyright &copy; 2021 Boothcamp</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1"></i>
-            </a>
-        </div>
-    </footer>
+        <div class="item">
+          <img src="./img/size.jpg">
+          <div class="content">
+            <div class="author">ARSALAN</div>
+            <div class="title">RIWA'S GUEST HOUSE</div>
+            <div class="topic">ROOMS </div>
+            <div class="des">
+              <!-- lorem 50 -->
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="enrollLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="lead">Fill up this form and we will get back to you </p>
-                    <form>
-                        <div class="mb-3">
-                            <label for="first-name" class="col-form-label">
-                                First Name:
-                            </label>
-                            <input type="text" class="form-control" id="first-name"> 
-                              </div>
-                              <div class="mb-3">
-                                <label for="first-name" class="col-form-label">
-                                    Email:
-                                </label>
-                                <input type="text" class="form-control" id="email"> 
-                                  </div>
-                                  <div class="mb-3">
-                                    <label for="first-name" class="col-form-label">
-                                        Phone:
-                                    </label>
-                                    <input type="text" class="form-control" id="phone"> 
-                                      </div>
-                         </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
-                </div>
             </div>
+            <div class="buttons">
+              <button>ZEN</button>
+              <button>ROOM</button>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- list thumnail -->
+    <div class="thumbnail">
+      <div class="item">
+        <img src="./img/348172270.jpg">
+        <div class="content">
+          <div class="title">
+            CALL-9863093877
+          </div>
+          <div class="description">
+            KINGS ROOM
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/double-room.jpg">
+        <div class="content">
+          <div class="title">
+            CALL-9863093877
+          </div>
+          <div class="description">
+            PLAY ROOM
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/WhatsApp Image 2024-12-16 at 11.58.12 AM.jpeg">
+        <div class="content">
+          <div class="title">
+            CALL-9863093877
+          </div>
+          <div class="description">
+            COMFORT ROOM
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/photo-1629140727571-9b5c6f6267b4.jpeg">
+        <div class="content">
+          <div class="title">
+            CALL-9863093877
+          </div>
+          <div class="description">
+            LEISURE ROOM
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./img/size.jpg" width="300">
+        <div class="content">
+          <div class="title">
+            CALL- 91-9863093877
+          </div>
+          <div class="description">
+            ZEN ROOM
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- next prev -->
+
+    <div class="arrows">
+      <button id="prev">
+        <</button>
+          <button id="next">></button>
+    </div>
+    <!-- time running -->
+    <div class="time"></div>
+
+  </div>
+  <!--Hero section-->
+  <div class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <h1></h1>
+        <h2> <i class="fas fa-phone"></i> CALL US :</h2>
+
+        <a href="tel:9863093877">
+          <p>+91-9863093877 /</p>
+        </a>
+
+        <button class="main__btn"><a href="#">BOOK NOW </a>
+        </button>
+      </div>
+
+
+
+      <div class="main__img--container">
+        <hr>
+        <img src="./img/WhatsApp Image 2024-12-16 at 11.58.12 AM.jpeg" alt="pic" id="main__img" data-aos="fade-left">
+        <hr>
+        <h1>RIWA'S GUEST HOUSE</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laudantium cum nam, numquam autem ea beatae
+          recusandae doloribus.</P>
+
+      </div>
     </div>
 
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <!--Services section-->
+    <div class="services">
+      <div class="services__container">
+        <h1>"We're delighted to host your stay" </h1>
+        <div class="services__card">
+          <h2>Experience Bliss</h2>
+          <p>FOR 5000 Rs only- Package - Tea/Coffee,Compilementary breakfast,Mini fridge,Free Wifi, tv + Guide for a
+            day[optional].</p>
+          <button>BOOK NOW</button>
+        </div>
+        <div class="services__container">
+          <div class="services__card">
+            <h2></h2>
+            <p>3000 RS only-</p>
+            <button>BOOK NOW</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="contact bg-dark" id="contact">
+
+        <div class="row">
+          <form action="https://formsubmit.co/guesthouseriwaas@gmail.com" method="POST">
+            <h3>send us message</h3>
+            <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+            <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://arsalan257.github.io/pages/thankyou.html">
+            <input type="number" name="number" required maxlength="10" min="0" max="9999999999"
+              placeholder="enter your number" class="box">
+            <textarea name="msg" class="box" required maxlength="1000" placeholder="enter your message" cols="30"
+              rows="10"></textarea>
+            <input type="submit" value="send message" name="send" class="btn">
+          </form>
+
+
+          <!--Map Section-->
+          <section class="p-5 bg-dark">
+            <div class="container">
+              <div class="row gap-5 align-items-center justify-content-between">
+                <div class="col-md">
+                
+                <div class="col-md p-5">
+                  <div id="map">
+                    <h3>OUR <span class="text-danger">Location</span></h3>
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d792.2247799473155!2d91.90441944051179!3d25.577538472952515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e9!4m5!1s0x37507f256bc30b7d%3A0x2bae6e7936d9b158!2sRIWA&#39;S%20Guest%20house%20Demsei%C3%B1-%C3%8Fong%20Shillong%2C%20Meghalaya%20793011!3m2!1d25.577126399999997!2d91.90431339999999!4m3!3m2!1d25.577218199999997!2d91.9043274!5e1!3m2!1sen!2sin!4v1733806356042!5m2!1sen!2sin"
+                    width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="img-fluid" ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--Footer Section-->
+          <div class="footer bg-dark">
+            <div class="footer__container">
+              <div class="footer__links">
+                <div class="footer__link--wrapper">
+                  <div class="footer__link--items">
+                    <h1>About US</h1>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Shillong,Demseniong</a>
+                    <a href="#">RIWAA'S CAFE [opening soon]</a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                  </div>
+
+                  <div class="footer__link--items">
+                    <h1>Contacts</h1>
+                    <a href="#"><i><i class="fas fa-phone"></i></i> +9863093877</a>
+                    <a href="#"><i class="fas fa-phone"></i> +9436106079</a>
+                    <a href="#"><i class="fas fa-envelope"></i>guesthouseriwaas@gmail.com</a>
+                    <a href="#">Investements</a>
+                    <a href="#">Term of service</a>
+                  </div>
+                </div>
+               
+                  <div class="footer__link--items">
+                    <h1>Social Media </h1>
+                    <a href="">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Youtube</a>
+                    <a href="#">Link.in</a>
+                  </div>
+                </div>
+              </div>
+              <div class="social__media">
+                <div class="social__media--wrap">
+                  <div class="footer__logo">
+                    <a href="#" id="footer__logo">RIW <SPAN class="text-danger">AA'S</SPAN></a>
+                  </div>
+                  <p class="website__rights">RIWAA'S 2024. All rights reserved
+                  </p>
+                  <div class="social__icons">
+                    <a href="https://www.facebook.com/" class="social__icon--link" target="_blank">
+                      <i class="fab fa-facebook"></i>
+                    </a>
+                    <div class="social__icons">
+                      <a href="https://www.instagram.com/arsalan_kyndiah/profilecard/?igsh=ZnplOGxxeXRocGJ3"
+                        class="social__icon--link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                      <div class="social__icons">
+                        <a href="" class="social__icon--link" target="_blank">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                          </svg>
+                        </a>
+                        <div class="social__icons">
+                          <a href="" class="social__icon--link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                          </a>
+                          <div class="social__icons">
+                            <a href="" class="social__icon--link" target="_blank">
+                              <i class="fab fa-youtube"></i>
+                            </a>
+                          </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+
+                <script src="./main.js"></script>
 
 </body>
 
